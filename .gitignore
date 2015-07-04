@@ -1,0 +1,11 @@
+*.exe
+*.suo
+*.pyc
+*.pyo
+
+photino/bin
+photino/obj
+
+*.nupkg
+**/packages/*
+!**/packages/build/
