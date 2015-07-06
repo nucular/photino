@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 # SharpDevelop 4.4
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "photino", "photino.csproj", "{8B3741AD-118B-461F-BB6F-2F9E7097DE92}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Photino", "Photino.csproj", "{8B3741AD-118B-461F-BB6F-2F9E7097DE92}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

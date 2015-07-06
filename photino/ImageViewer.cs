@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace photino
+namespace Photino
 {
 	/// <summary>
 	/// Description of ImageViewer.

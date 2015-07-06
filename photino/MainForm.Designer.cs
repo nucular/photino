@@ -3,7 +3,7 @@
  * Date: 04.07.2015
  * Time: 22:31
  */
-namespace photino
+namespace Photino
 {
 	partial class MainForm
 	{
@@ -33,7 +33,7 @@ namespace photino
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.imageViewer = new photino.ImageViewer();
+			this.imageViewer = new Photino.ImageViewer();
 			((System.ComponentModel.ISupportInitialize)(this.imageViewer)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -60,6 +60,6 @@ namespace photino
 			((System.ComponentModel.ISupportInitialize)(this.imageViewer)).EndInit();
 			this.ResumeLayout(false);
 		}
-		private photino.ImageViewer imageViewer;
+		private Photino.ImageViewer imageViewer;
 	}
 }
