@@ -14,10 +14,18 @@ namespace Photino
 		[STAThread]
 		private static void Main(string[] args)
 		{
-			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new MainForm());
+			Application.EnableVisualStyles();
+			
+			MainForm mf;
+			
+			if (args.Length > 0) {
+				mf = new MainForm(args[0]);
+			} else {
+				mf = new MainForm();
+			}
+			
+			Application.Run(mf);
 		}
-		
 	}
 }

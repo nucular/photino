@@ -4,8 +4,8 @@
     <Profile Name="(Default)" />
   </Profiles>
   <Settings>
-    <Setting Name="Test" Type="System.Boolean" Scope="User" Roaming="false">
-      <Value Profile="(Default)">False</Value>
+    <Setting Name="Padding" Type="System.Int32" Scope="User" Roaming="false">
+      <Value Profile="(Default)">50</Value>
     </Setting>
   </Settings>
 </SettingsFile>

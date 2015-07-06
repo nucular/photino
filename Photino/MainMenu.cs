@@ -17,7 +17,7 @@ namespace Photino
 				new Bitmap(16, 16),
 				delegate(object sender, EventArgs e) {
 					SettingsForm frm = new SettingsForm();
-					frm.Show();
+					frm.ShowDialog(this);
 				}
 			);
 			this.Items.Add(

@@ -45,6 +45,7 @@ namespace Photino
 			this.imageViewer.Location = new System.Drawing.Point(0, 0);
 			this.imageViewer.Name = "imageViewer";
 			this.imageViewer.Size = new System.Drawing.Size(284, 262);
+			this.imageViewer.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
 			this.imageViewer.TabIndex = 0;
 			this.imageViewer.TabStop = false;
 			// 
@@ -62,6 +63,7 @@ namespace Photino
 			this.ContextMenuStrip = this.mainMenu;
 			this.ControlBox = false;
 			this.Controls.Add(this.imageViewer);
+			this.Enabled = false;
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.TopMost = true;

@@ -10,11 +10,27 @@ namespace Photino
 	/// </summary>
 	public partial class MainForm : Form
 	{
-		public MainForm()
+		public MainForm(string path="")
 		{
 			InitializeComponent();
 			
-			this.Focus();
+			if (path != "") {
+				this.imageViewer.LoadFromPath(path);
+				this.ClientSize = this.imageViewer.CalcSize();
+			} else {
+				this.Shown += delegate(object sender, EventArgs args) {
+					OpenFileDialog dlg = new OpenFileDialog();
+				
+					if (dlg.ShowDialog() != DialogResult.OK) {
+						this.Close();
+					} else {
+						this.imageViewer.LoadFromPath(dlg.FileName);
+						this.ClientSize = this.imageViewer.CalcSize();
+						this.CenterToScreen();
+					}
+				};
+			}
+			
 			this.LostFocus += onLostFocus;
 		}
 		

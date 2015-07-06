@@ -25,13 +25,13 @@ namespace Photino.Properties {
 		
 		[global::System.Configuration.UserScopedSettingAttribute()]
 		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-		[global::System.Configuration.DefaultSettingValueAttribute("False")]
-		public bool Test {
+		[global::System.Configuration.DefaultSettingValueAttribute("50")]
+		public int Padding {
 			get {
-				return ((bool)(this["Test"]));
+				return ((int)(this["Padding"]));
 			}
 			set {
-				this["Test"] = value;
+				this["Padding"] = value;
 			}
 		}
 	}
