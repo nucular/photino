@@ -33,7 +33,19 @@ namespace photino
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.imageViewer = new photino.ImageViewer();
+			((System.ComponentModel.ISupportInitialize)(this.imageViewer)).BeginInit();
 			this.SuspendLayout();
+			// 
+			// imageViewer
+			// 
+			this.imageViewer.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+			this.imageViewer.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.imageViewer.Location = new System.Drawing.Point(0, 0);
+			this.imageViewer.Name = "imageViewer";
+			this.imageViewer.Size = new System.Drawing.Size(284, 262);
+			this.imageViewer.TabIndex = 0;
+			this.imageViewer.TabStop = false;
 			// 
 			// MainForm
 			// 
@@ -42,9 +54,12 @@ namespace photino
 			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.ClientSize = new System.Drawing.Size(284, 262);
 			this.ControlBox = false;
+			this.Controls.Add(this.imageViewer);
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+			((System.ComponentModel.ISupportInitialize)(this.imageViewer)).EndInit();
 			this.ResumeLayout(false);
 		}
+		private photino.ImageViewer imageViewer;
 	}
 }
