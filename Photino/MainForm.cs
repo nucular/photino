@@ -19,7 +19,9 @@ namespace Photino
 		}
 		
 		public void onLostFocus(object sender, EventArgs args) {
-			this.Close();
+			if (SettingsForm.ActiveForm == null) {
+				this.Close();
+			}
 		}
 		
 		protected override void WndProc(ref Message m) {
