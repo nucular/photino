@@ -1,4 +1,4 @@
-photino
+Photino
 =======
 
 Fast and clean image viewer for Windoze™.  
