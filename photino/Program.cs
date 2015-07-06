@@ -1,9 +1,4 @@
-﻿/*
- * Created by SharpDevelop.
- * Date: 04.07.2015
- * Time: 22:31
- */
-using System;
+﻿using System;
 using System.Windows.Forms;
 
 namespace photino
